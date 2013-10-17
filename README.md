@@ -31,7 +31,7 @@ Please, no. There are many reasons to not to contribute this kind of content:
 
 ## Which languages does Algopedia support? ##
 
-Algopedia is agnostic about the implementation language of the algorithms contained. Feel free to implement solutions in exotic languages and send a pull request.
+Algopedia is agnostic about the implementation language of the algorithms contained in it. Feel free to implement solutions in exotic languages and send a pull request.
 
 ## Which is the format of contributions to Algopedia? ##
 
@@ -52,7 +52,7 @@ The file must begin with the following GPL license text in a commentary:
 > You should have received a copy of the GNU General Public License
 > ralong with Algopedia.  If not, see <http://www.gnu.org/licenses/>.
 
-Then, you should implement your algorithm main function (you can use auxiliary functions if you need them). Try to make algorithms autocontained. If external dependecies are unavoidable, mention those in the README file. It's a good thing that you include a driver program with a few test cases. You can make your test cases as rigourous as you consider.
+Then, you should implement your algorithm main function (you can use auxiliary functions if you need them). Try to make algorithms autocontained. If external dependencies are unavoidable, mention those in the README file. It's a good thing that you include a driver program with a few test cases. You can make your test cases as rigourous as you consider.
 
 ## What if I discover an error in an algorithm? ##
 
