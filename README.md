@@ -9,11 +9,11 @@ It is a project created by [danielmartin](http://github.com/danielmartin/) that 
 
 Algopedia is more than a "cookbook" of algorithms. We want to add to each algorithm detailed explanations, running time and caveats, so that the information can be used by students and professionals alike. We are firm believers of "learning by doing" methodologies, so, ideally, students in Computer Science courses learn algorithms and data structures by using and contributing to Algopedia.
 
-# How can I contribute to Algopedia? #
+## How can I contribute to Algopedia? ##
 
 Simply fork this repository, make your changes in a topic branch and send a pull request.
 
-# Can I contribute original algorithms that I published in journals? #
+## Can I contribute original algorithms that I published in journals? ##
 
 Yes, as long as:
 
@@ -21,7 +21,7 @@ Yes, as long as:
 * you consider it interesting enough to be in Algopedia.
 * you are willing to make it part of Algopedia under the GPL.
 
-# Can I contribute my solutions to the X programming contest? #
+## Can I contribute my solutions to the X programming contest? ##
 
 Please, no. There are many reasons to not to contribute this kind of content:
 
@@ -29,11 +29,11 @@ Please, no. There are many reasons to not to contribute this kind of content:
 * some of the contest problems are not generalizable enough to be useful for a great amount of people.
 * you are spoiling the people that are trying to solve those problems. Algopedia's ultimate goal is to be educative.
 
-# Which languages does Algopedia support? #
+## Which languages does Algopedia support? ##
 
 Algopedia is agnostic about the implementation language of the algorithms contained. Feel free to implement solutions in exotic languages and send a pull request.
 
-# Which is the format of contributions to Algopedia? #
+## Which is the format of contributions to Algopedia? ##
 
 The file must begin with the following GPL license text in a commentary:
 
@@ -54,14 +54,14 @@ The file must begin with the following GPL license text in a commentary:
 
 Then, you should implement your algorithm main function (you can use auxiliary functions if you need them). Try to make algorithms autocontained. If external dependecies are unavoidable, mention those in the README file. It's a good thing that you include a driver program with a few test cases. You can make your test cases as rigourous as you consider.
 
-# What if I discover an error in an algorithm? #
+## What if I discover an error in an algorithm? ##
 
 Open an issue explaining the problem, with a failed test case in the description.
 
-# What if I have a faster algorithm for a problem? #
+## What if I have a faster algorithm for a problem? ##
 
 We love faster algorithms! Simply include your algorithm as an alternative function in your pull request. After a consensus, the community may decide to replace the original algorithm with your contribution.
 
-# Is there a coding style guide? #
+## Is there a coding style guide? ##
 
 Not at the moment. To guarantee a bit of homogenousness, try to follow the conventions of other problems solved in that particular language.
