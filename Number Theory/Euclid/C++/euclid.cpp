@@ -17,29 +17,66 @@
 
 using namespace std;
 
+int
+extended_euclidean_algorithm(int a, int b, int *prev_x, int *prev_y)
+{
+    int x, y, t, q;
+    x = *prev_y = 0;
+    y = *prev_x = 1;
+    while (b != 0) {
+	q = a / b;
+	t = b;
+	b = a % b;
+	a = t;
+	t = *prev_x;
+	*prev_x = x;
+	x = t - q * x;
+	t = *prev_y;
+	*prev_y = y;
+	y = t - q*y;
+    }
+    return a;
+}
+
 int 
-gcd(int x, int y)
+gcd(int a, int b)
 {
     int t;
-    while (y != 0) {
-	t = y;
-	y = x % y;
-	x = t;
+    while (b != 0) {
+	t = b;
+	b = a % b;
+	a = t;
     }
-    return x;
+    return a;
 }
 
 int main()
 {
-    int x = 3;
-    int y = 4;
-    cout << gcd(x, y) << endl;
-    x = -10;
-    y = -5;
-    cout << gcd(x, y) << endl;    
-    x = 234;
-    y = 69;
-    cout << gcd(x, y) << endl;
+    int a = 4;
+    int b = 3;
+    int x, y;
+    x = y = 0;
+    cout << gcd(a, b) << endl;
+    extended_euclidean_algorithm(a, b, &x, &y);
+    cout << "x = " << x << " y = " << y << endl;
 
+    a = 10;
+    b = 5;
+    cout << gcd(a, b) << endl;
+    extended_euclidean_algorithm(a, b, &x, &y);
+    cout << "x = " << x << " y = " << y << endl;
+
+    a = 234;
+    b = 69;
+    cout << gcd(a, b) << endl;
+    extended_euclidean_algorithm(a, b, &x, &y);
+    cout << "x = " << x << " y = " << y << endl;
+
+    a = 1769;
+    b = 551;
+    cout << gcd(a, b) << endl;
+    extended_euclidean_algorithm(a, b, &x, &y);
+    cout << "x = " << x << " y = " << y << endl;
+    
     return 0;
 }
