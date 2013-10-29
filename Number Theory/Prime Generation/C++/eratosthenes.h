@@ -13,5 +13,10 @@
  * You should have received a copy of the GNU General Public License
  * along with Algopedia.  If not, see <http://www.gnu.org/licenses/>.
  */
+#ifdef __ERATOSTHENES_H
+#define __ERATOSTHENES_H
+
 set<int> 
 get_primes(int N);
+
+#endif
